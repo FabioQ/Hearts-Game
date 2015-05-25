@@ -1,0 +1,445 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<editmodel:ClassDiagramEditModel xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:editmodel="editmodel.xmi" xmlns:options="options.xmi" size="2622,2740" id="com.cyberdyne.heartsclient.controller" metadata="uml2-1.0" initialized="true" scrolledY="774" tag="10" key="32303037303533312D313020486561727473436C69656E74">
+  <children xsi:type="editmodel:ClassEditModel" targetConnections="//@children.10/@sourceConnections.1 //@children.9/@sourceConnections.1 //@children.1/@sourceConnections.0 //@children.6/@sourceConnections.0" name="Room" location="1825,2266" size="157,383" id="com.cyberdyne.heartsclient.model/Room" runTimeClassModel="nextRole,getPlayer(Ljava.lang.String;),status,myRole,createRoom(Ljava.lang.String;),botNum,prevRole,myAffiliation,nextNextRole,playersNumber,spectatorsNumber,getPlayersByRole(Ljava.lang.String;),getRoomInstance(),nameRoom,Room(Ljava.lang.String;),deleteRoomInstance(),removePlayer(Ljava.lang.String;),addPlayer(Ljava.lang.String;Ljava.lang.String;Ljava.lang.String;)">
+    <children xsi:type="editmodel:CompartmentEditModel" size="106,180">
+      <children xsi:type="editmodel:AttributeEditModel" name="botNum" id="com.cyberdyne.heartsclient.model/Room#botNum"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="myAffiliation" id="com.cyberdyne.heartsclient.model/Room#myAffiliation"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="myRole" id="com.cyberdyne.heartsclient.model/Room#myRole"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="nameRoom" id="com.cyberdyne.heartsclient.model/Room#nameRoom"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="nextNextRole" id="com.cyberdyne.heartsclient.model/Room#nextNextRole"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="nextRole" id="com.cyberdyne.heartsclient.model/Room#nextRole"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="playersNumber" id="com.cyberdyne.heartsclient.model/Room#playersNumber"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="prevRole" id="com.cyberdyne.heartsclient.model/Room#prevRole"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="spectatorsNumber" id="com.cyberdyne.heartsclient.model/Room#spectatorsNumber"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="status" id="com.cyberdyne.heartsclient.model/Room#status"/>
+    </children>
+    <children xsi:type="editmodel:CompartmentEditModel" size="106,144">
+      <children xsi:type="editmodel:MethodEditModel" name="Room" id="com.cyberdyne.heartsclient.model/Room#Room(Ljava.lang.String;)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="addPlayer" id="com.cyberdyne.heartsclient.model/Room#addPlayer(Ljava.lang.String;Ljava.lang.String;Ljava.lang.String;)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="createRoom" id="com.cyberdyne.heartsclient.model/Room#createRoom(Ljava.lang.String;)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="deleteRoomInstance" id="com.cyberdyne.heartsclient.model/Room#deleteRoomInstance()"/>
+      <children xsi:type="editmodel:MethodEditModel" name="getPlayer" id="com.cyberdyne.heartsclient.model/Room#getPlayer(Ljava.lang.String;)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="getPlayersByRole" id="com.cyberdyne.heartsclient.model/Room#getPlayersByRole(Ljava.lang.String;)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="getRoomInstance" id="com.cyberdyne.heartsclient.model/Room#getRoomInstance()"/>
+      <children xsi:type="editmodel:MethodEditModel" name="removePlayer" id="com.cyberdyne.heartsclient.model/Room#removePlayer(Ljava.lang.String;)"/>
+    </children>
+    <children xsi:type="editmodel:CompartmentEditModel"/>
+    <sourceConnections xsi:type="editmodel:AssociationEditModel" autoLocated="true" id="com.cyberdyne.heartsclient.model/Room@aRoom+com.cyberdyne.heartsclient.controller/JabberSmackAPI@" source="//@children.0" target="//@children.5" targetEnd="//@children.0/@sourceConnections.0/@children.2" label="//@children.0/@sourceConnections.0/@children.0" sourceEnd="//@children.0/@sourceConnections.0/@children.1" connectionRouterKind="Manhattan">
+      <children xsi:type="editmodel:WireLabelEditModel" size="0,10" anchorKind="MiddlePart"/>
+      <children xsi:type="editmodel:AssociationEndEditModel" name="aRoom" location="0,373" id="com.cyberdyne.heartsclient.model/Room@aRoom+com.cyberdyne.heartsclient.controller/JabberSmackAPI@|com.cyberdyne.heartsclient.model/Room#aRoom" attachSource="true" multiplicityLabel="//@children.0/@sourceConnections.0/@children.1/@children.1" roleLabel="//@children.0/@sourceConnections.0/@children.1/@children.0" navigable="true" changeability="2">
+        <children xsi:type="editmodel:LabelEditModel" name=" - aRoom" location="1781,2622" size="37,10" anchorKind="FirstPart"/>
+        <children xsi:type="editmodel:LabelEditModel" name="0..1" location="1802,2646" size="16,10" anchorKind="FirstPart"/>
+      </children>
+      <children xsi:type="editmodel:AssociationEndEditModel" location="116,0" id="com.cyberdyne.heartsclient.model/Room@aRoom+com.cyberdyne.heartsclient.controller/JabberSmackAPI@|com.cyberdyne.heartsclient.controller/JabberSmackAPI#"/>
+    </sourceConnections>
+    <sourceConnections xsi:type="editmodel:AssociationEditModel" autoLocated="true" id="com.cyberdyne.heartsclient.model/Room@room+com.cyberdyne.heartsclient.model/Game@game" source="//@children.0" target="//@children.7" targetEnd="//@children.0/@sourceConnections.1/@children.2" label="//@children.0/@sourceConnections.1/@children.0" sourceEnd="//@children.0/@sourceConnections.1/@children.1" connectionRouterKind="Manhattan">
+      <children xsi:type="editmodel:WireLabelEditModel" size="0,10" anchorKind="MiddlePart"/>
+      <children xsi:type="editmodel:AssociationEndEditModel" name="room" location="147,0" id="com.cyberdyne.heartsclient.model/Room@room+com.cyberdyne.heartsclient.model/Game@game|com.cyberdyne.heartsclient.model/Room#room" attachSource="true" multiplicityLabel="//@children.0/@sourceConnections.1/@children.1/@children.1" roleLabel="//@children.0/@sourceConnections.1/@children.1/@children.0" navigable="true" changeability="2">
+        <children xsi:type="editmodel:LabelEditModel" name=" - room" location="1934,2249" size="31,10" anchorKind="FirstPart"/>
+        <children xsi:type="editmodel:LabelEditModel" name="0..1" location="1979,2249" size="16,10" anchorKind="FirstPart"/>
+      </children>
+      <children xsi:type="editmodel:AssociationEndEditModel" name="game" location="0,229" id="com.cyberdyne.heartsclient.model/Room@room+com.cyberdyne.heartsclient.model/Game@game|com.cyberdyne.heartsclient.model/Game#game" multiplicityLabel="//@children.0/@sourceConnections.1/@children.2/@children.1" roleLabel="//@children.0/@sourceConnections.1/@children.2/@children.0" navigable="true">
+        <children xsi:type="editmodel:LabelEditModel" name=" + game" location="2405,2158" size="33,10" anchorKind="LastPart"/>
+        <children xsi:type="editmodel:LabelEditModel" name="0..1" location="2422,2182" size="16,10" anchorKind="LastPart"/>
+      </children>
+    </sourceConnections>
+    <classifierPreferences xsi:type="editmodel:UMLClassDiagramClassifierPreference" showStereotype="true" attributeSorter="Natural" methodSorter="Natural" innerClassSorter="Natural" showPublicAttributes="true" showPackageAttributes="true" showStaticAttributes="true" showPublicMethods="true" showPackageMethods="true" showStaticMethods="true" showPublicInnerClasses="true" showPackageInnerClasses="true" showStaticInnerClasses="true" packageIndication="3" showAttributeProperty="true"/>
+  </children>
+  <children xsi:type="editmodel:ClassEditModel" targetConnections="//@children.15/@sourceConnections.7 //@children.14/@sourceConnections.1 //@children.12/@sourceConnections.0" name="QueryListener" location="1222,1912" size="165,95" id="com.cyberdyne.heartsclient.listeners/QueryListener" runTimeClassModel="getRoom(),QueryListener(Lcom.cyberdyne.heartsclient.view.LobbyView;)">
+    <children xsi:type="editmodel:CompartmentEditModel"/>
+    <children xsi:type="editmodel:CompartmentEditModel" size="81,36">
+      <children xsi:type="editmodel:MethodEditModel" name="QueryListener" id="com.cyberdyne.heartsclient.listeners/QueryListener#QueryListener(Lcom.cyberdyne.heartsclient.view.LobbyView;)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="getRoom" id="com.cyberdyne.heartsclient.listeners/QueryListener#getRoom()"/>
+    </children>
+    <children xsi:type="editmodel:CompartmentEditModel"/>
+    <sourceConnections xsi:type="editmodel:AssociationEditModel" autoLocated="true" id="com.cyberdyne.heartsclient.model/Room@room+com.cyberdyne.heartsclient.listeners/QueryListener@" source="//@children.1" target="//@children.0" targetEnd="//@children.1/@sourceConnections.0/@children.2" label="//@children.1/@sourceConnections.0/@children.0" sourceEnd="//@children.1/@sourceConnections.0/@children.1" connectionRouterKind="Manhattan">
+      <children xsi:type="editmodel:WireLabelEditModel" size="0,10" anchorKind="MiddlePart"/>
+      <children xsi:type="editmodel:AssociationEndEditModel" location="155,95" id="com.cyberdyne.heartsclient.model/Room@room+com.cyberdyne.heartsclient.listeners/QueryListener@|com.cyberdyne.heartsclient.listeners/QueryListener#" attachSource="true"/>
+      <children xsi:type="editmodel:AssociationEndEditModel" name="room" location="0,10" id="com.cyberdyne.heartsclient.model/Room@room+com.cyberdyne.heartsclient.listeners/QueryListener@|com.cyberdyne.heartsclient.model/Room#room" multiplicityLabel="//@children.1/@sourceConnections.0/@children.2/@children.1" roleLabel="//@children.1/@sourceConnections.0/@children.2/@children.0" navigable="true">
+        <children xsi:type="editmodel:LabelEditModel" name=" - room" location="1787,2283" size="31,10" anchorKind="LastPart"/>
+        <children xsi:type="editmodel:LabelEditModel" name="0..1" location="1802,2259" size="16,10" anchorKind="LastPart"/>
+      </children>
+    </sourceConnections>
+    <classifierPreferences xsi:type="editmodel:UMLClassDiagramClassifierPreference" showStereotype="true" attributeSorter="Natural" methodSorter="Natural" innerClassSorter="Natural" showPublicAttributes="true" showPackageAttributes="true" showStaticAttributes="true" showPublicMethods="true" showPackageMethods="true" showStaticMethods="true" showPublicInnerClasses="true" showPackageInnerClasses="true" showStaticInnerClasses="true" packageIndication="3" showAttributeProperty="true"/>
+  </children>
+  <children xsi:type="editmodel:ClassEditModel" targetConnections="//@children.15/@sourceConnections.4" name="RegistrationManager" location="1701,773" size="150,85" id="com.cyberdyne.heartsclient.controller/RegistrationManager" runTimeClassModel="RegistrationManager(),createNewAccount(Ljava.lang.String;Ljava.lang.String;Ljava.lang.String;)">
+    <children xsi:type="editmodel:CompartmentEditModel"/>
+    <children xsi:type="editmodel:CompartmentEditModel" size="107,36">
+      <children xsi:type="editmodel:MethodEditModel" name="RegistrationManager" id="com.cyberdyne.heartsclient.controller/RegistrationManager#RegistrationManager()"/>
+      <children xsi:type="editmodel:MethodEditModel" name="createNewAccount" id="com.cyberdyne.heartsclient.controller/RegistrationManager#createNewAccount(Ljava.lang.String;Ljava.lang.String;Ljava.lang.String;)"/>
+    </children>
+    <children xsi:type="editmodel:CompartmentEditModel"/>
+    <sourceConnections xsi:type="editmodel:AssociationEditModel" autoLocated="true" id="com.cyberdyne.heartsclient.controller/RegistrationManager@registrationManager+com.cyberdyne.heartsclient.view/RegistrationView@registrationView" source="//@children.2" target="//@children.11" targetEnd="//@children.2/@sourceConnections.0/@children.2" label="//@children.2/@sourceConnections.0/@children.0" sourceEnd="//@children.2/@sourceConnections.0/@children.1" connectionRouterKind="Manhattan">
+      <children xsi:type="editmodel:WireLabelEditModel" size="0,10" anchorKind="MiddlePart"/>
+      <children xsi:type="editmodel:AssociationEndEditModel" name="registrationManager" location="10,0" id="com.cyberdyne.heartsclient.controller/RegistrationManager@registrationManager+com.cyberdyne.heartsclient.view/RegistrationView@registrationView|com.cyberdyne.heartsclient.controller/RegistrationManager#registrationManager" attachSource="true" multiplicityLabel="//@children.2/@sourceConnections.0/@children.1/@children.1" roleLabel="//@children.2/@sourceConnections.0/@children.1/@children.0" navigable="true">
+        <children xsi:type="editmodel:LabelEditModel" name=" ~ registrationManager" location="1718,756" size="89,10" anchorKind="FirstPart"/>
+        <children xsi:type="editmodel:LabelEditModel" name="1" location="1698,756" size="6,10" anchorKind="FirstPart"/>
+      </children>
+      <children xsi:type="editmodel:AssociationEndEditModel" name="registrationView" location="150,67" id="com.cyberdyne.heartsclient.controller/RegistrationManager@registrationManager+com.cyberdyne.heartsclient.view/RegistrationView@registrationView|com.cyberdyne.heartsclient.view/RegistrationView#registrationView" multiplicityLabel="//@children.2/@sourceConnections.0/@children.2/@children.1" roleLabel="//@children.2/@sourceConnections.0/@children.2/@children.0" navigable="true">
+        <children xsi:type="editmodel:LabelEditModel" name=" + registrationView" location="1686,100" size="75,10" anchorKind="LastPart"/>
+        <children xsi:type="editmodel:LabelEditModel" name="1" location="1686,124" size="6,10" anchorKind="LastPart"/>
+      </children>
+    </sourceConnections>
+    <classifierPreferences xsi:type="editmodel:UMLClassDiagramClassifierPreference" showStereotype="true" attributeSorter="Natural" methodSorter="Natural" innerClassSorter="Natural" showPublicAttributes="true" showPackageAttributes="true" showStaticAttributes="true" showPublicMethods="true" showPackageMethods="true" showStaticMethods="true" showPublicInnerClasses="true" showPackageInnerClasses="true" showStaticInnerClasses="true" packageIndication="3" showAttributeProperty="true"/>
+  </children>
+  <children xsi:type="editmodel:ClassEditModel" targetConnections="//@children.4/@sourceConnections.0" name="LoginView" location="2038,223" size="150,77" id="com.cyberdyne.heartsclient.view/LoginView" runTimeClassModel="LoginView(Lcom.cyberdyne.heartsclient.controller.LoginManager;)">
+    <children xsi:type="editmodel:CompartmentEditModel"/>
+    <children xsi:type="editmodel:CompartmentEditModel" size="67,18">
+      <children xsi:type="editmodel:MethodEditModel" name="LoginView" id="com.cyberdyne.heartsclient.view/LoginView#LoginView(Lcom.cyberdyne.heartsclient.controller.LoginManager;)"/>
+    </children>
+    <children xsi:type="editmodel:CompartmentEditModel"/>
+    <classifierPreferences xsi:type="editmodel:UMLClassDiagramClassifierPreference" showStereotype="true" attributeSorter="Natural" methodSorter="Natural" innerClassSorter="Natural" showPublicAttributes="true" showPackageAttributes="true" showStaticAttributes="true" showPublicMethods="true" showPackageMethods="true" showStaticMethods="true" showPublicInnerClasses="true" showPackageInnerClasses="true" showStaticInnerClasses="true" packageIndication="3" showAttributeProperty="true"/>
+  </children>
+  <children xsi:type="editmodel:ClassEditModel" targetConnections="//@children.15/@sourceConnections.3" name="LoginManager" location="1436,693" size="116,85" id="com.cyberdyne.heartsclient.controller/LoginManager" runTimeClassModel="LoginManager(),LoginAccount(Ljava.lang.String;Ljava.lang.String;)">
+    <children xsi:type="editmodel:CompartmentEditModel"/>
+    <children xsi:type="editmodel:CompartmentEditModel" size="82,36">
+      <children xsi:type="editmodel:MethodEditModel" name="LoginAccount" id="com.cyberdyne.heartsclient.controller/LoginManager#LoginAccount(Ljava.lang.String;Ljava.lang.String;)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="LoginManager" id="com.cyberdyne.heartsclient.controller/LoginManager#LoginManager()"/>
+    </children>
+    <children xsi:type="editmodel:CompartmentEditModel"/>
+    <sourceConnections xsi:type="editmodel:AssociationEditModel" autoLocated="true" id="com.cyberdyne.heartsclient.view/LoginView@loginView+com.cyberdyne.heartsclient.controller/LoginManager@loginManager" source="//@children.4" target="//@children.3" targetEnd="//@children.4/@sourceConnections.0/@children.2" label="//@children.4/@sourceConnections.0/@children.0" sourceEnd="//@children.4/@sourceConnections.0/@children.1" connectionRouterKind="Manhattan">
+      <children xsi:type="editmodel:WireLabelEditModel" size="0,10" anchorKind="MiddlePart"/>
+      <children xsi:type="editmodel:AssociationEndEditModel" name="loginManager" location="106,0" id="com.cyberdyne.heartsclient.view/LoginView@loginView+com.cyberdyne.heartsclient.controller/LoginManager@loginManager|com.cyberdyne.heartsclient.controller/LoginManager#loginManager" attachSource="true" multiplicityLabel="//@children.4/@sourceConnections.0/@children.1/@children.1" roleLabel="//@children.4/@sourceConnections.0/@children.1/@children.0" navigable="true">
+        <children xsi:type="editmodel:LabelEditModel" name=" + loginManager" location="1470,676" size="65,10" anchorKind="FirstPart"/>
+        <children xsi:type="editmodel:LabelEditModel" name="1" location="1549,676" size="6,10" anchorKind="FirstPart"/>
+      </children>
+      <children xsi:type="editmodel:AssociationEndEditModel" name="loginView" location="0,67" id="com.cyberdyne.heartsclient.view/LoginView@loginView+com.cyberdyne.heartsclient.controller/LoginManager@loginManager|com.cyberdyne.heartsclient.view/LoginView#loginView" multiplicityLabel="//@children.4/@sourceConnections.0/@children.2/@children.1" roleLabel="//@children.4/@sourceConnections.0/@children.2/@children.0" navigable="true">
+        <children xsi:type="editmodel:LabelEditModel" name=" ~ loginView" location="1983,273" size="48,10" anchorKind="LastPart"/>
+        <children xsi:type="editmodel:LabelEditModel" name="1" location="2025,297" size="6,10" anchorKind="LastPart"/>
+      </children>
+    </sourceConnections>
+    <classifierPreferences xsi:type="editmodel:UMLClassDiagramClassifierPreference" showStereotype="true" attributeSorter="Natural" methodSorter="Natural" innerClassSorter="Natural" showPublicAttributes="true" showPackageAttributes="true" showStaticAttributes="true" showPublicMethods="true" showPackageMethods="true" showStaticMethods="true" showPublicInnerClasses="true" showPackageInnerClasses="true" showStaticInnerClasses="true" packageIndication="3" showAttributeProperty="true"/>
+  </children>
+  <children xsi:type="editmodel:ClassEditModel" targetConnections="//@children.10/@sourceConnections.3 //@children.0/@sourceConnections.0" name="JabberSmackAPI" location="1562,2653" size="126,67" id="com.cyberdyne.heartsclient.controller/JabberSmackAPI" runTimeClassModel="main([Ljava.lang.String;)">
+    <children xsi:type="editmodel:CompartmentEditModel"/>
+    <children xsi:type="editmodel:CompartmentEditModel" size="46,18">
+      <children xsi:type="editmodel:MethodEditModel" name="main" id="com.cyberdyne.heartsclient.controller/JabberSmackAPI#main([Ljava.lang.String;)"/>
+    </children>
+    <children xsi:type="editmodel:CompartmentEditModel"/>
+    <classifierPreferences xsi:type="editmodel:UMLClassDiagramClassifierPreference" showStereotype="true" attributeSorter="Natural" methodSorter="Natural" innerClassSorter="Natural" showPublicAttributes="true" showPackageAttributes="true" showStaticAttributes="true" showPublicMethods="true" showPackageMethods="true" showStaticMethods="true" showPublicInnerClasses="true" showPackageInnerClasses="true" showStaticInnerClasses="true" packageIndication="3" showAttributeProperty="true"/>
+  </children>
+  <children xsi:type="editmodel:ClassEditModel" targetConnections="//@children.10/@sourceConnections.0 //@children.9/@sourceConnections.0" name="GameView" location="2278,2227" size="150,347" id="com.cyberdyne.heartsclient.view/GameView" runTimeClassModel="disconnectPlayer(),notifyUserConnection(Ljava.lang.String;),notifyMatchEnd(Ljava.lang.String;Ljava.lang.String;Ljava.lang.String;Ljava.lang.String;),notifyFirstTurn(Ljava.lang.String;Ljava.lang.String;Ljava.lang.String;Ljava.lang.String;),GameView(Lcom.cyberdyne.heartsclient.controller.GameManager;Lcom.cyberdyne.heartsclient.model.Room;),notifyPlayedCard(Ljava.lang.String;Ljava.lang.String;),notifyIncomingCards(),notifyRoomUpdate(),playFirstTurn([I),getaRoomName(),randomValue(Ljava.util.Hashtable;),notifyFirstTurnEnd(),cardOnTable(Ljava.lang.String;Ljava.lang.String;),userName,sendStandardTurn(I),notifyUserDisconnection(Ljava.lang.String;Ljava.lang.String;Ljava.lang.String;)">
+    <children xsi:type="editmodel:CompartmentEditModel" size="86,18">
+      <children xsi:type="editmodel:AttributeEditModel" name="userName" id="com.cyberdyne.heartsclient.view/GameView#userName"/>
+    </children>
+    <children xsi:type="editmodel:CompartmentEditModel" size="122,270">
+      <children xsi:type="editmodel:MethodEditModel" name="GameView" id="com.cyberdyne.heartsclient.view/GameView#GameView(Lcom.cyberdyne.heartsclient.controller.GameManager;Lcom.cyberdyne.heartsclient.model.Room;)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="cardOnTable" id="com.cyberdyne.heartsclient.view/GameView#cardOnTable(Ljava.lang.String;Ljava.lang.String;)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="disconnectPlayer" id="com.cyberdyne.heartsclient.view/GameView#disconnectPlayer()"/>
+      <children xsi:type="editmodel:MethodEditModel" name="getaRoomName" id="com.cyberdyne.heartsclient.view/GameView#getaRoomName()"/>
+      <children xsi:type="editmodel:MethodEditModel" name="notifyFirstTurn" id="com.cyberdyne.heartsclient.view/GameView#notifyFirstTurn(Ljava.lang.String;Ljava.lang.String;Ljava.lang.String;Ljava.lang.String;)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="notifyFirstTurnEnd" id="com.cyberdyne.heartsclient.view/GameView#notifyFirstTurnEnd()"/>
+      <children xsi:type="editmodel:MethodEditModel" name="notifyIncomingCards" id="com.cyberdyne.heartsclient.view/GameView#notifyIncomingCards()"/>
+      <children xsi:type="editmodel:MethodEditModel" name="notifyMatchEnd" id="com.cyberdyne.heartsclient.view/GameView#notifyMatchEnd(Ljava.lang.String;Ljava.lang.String;Ljava.lang.String;Ljava.lang.String;)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="notifyPlayedCard" id="com.cyberdyne.heartsclient.view/GameView#notifyPlayedCard(Ljava.lang.String;Ljava.lang.String;)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="notifyRoomUpdate" id="com.cyberdyne.heartsclient.view/GameView#notifyRoomUpdate()"/>
+      <children xsi:type="editmodel:MethodEditModel" name="notifyUserConnection" id="com.cyberdyne.heartsclient.view/GameView#notifyUserConnection(Ljava.lang.String;)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="notifyUserDisconnection" id="com.cyberdyne.heartsclient.view/GameView#notifyUserDisconnection(Ljava.lang.String;Ljava.lang.String;Ljava.lang.String;)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="playFirstTurn" id="com.cyberdyne.heartsclient.view/GameView#playFirstTurn([I)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="randomValue" id="com.cyberdyne.heartsclient.view/GameView#randomValue(Ljava.util.Hashtable;)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="sendStandardTurn" id="com.cyberdyne.heartsclient.view/GameView#sendStandardTurn(I)"/>
+    </children>
+    <children xsi:type="editmodel:CompartmentEditModel"/>
+    <sourceConnections xsi:type="editmodel:AssociationEditModel" autoLocated="true" id="com.cyberdyne.heartsclient.model/Room@aRoom+com.cyberdyne.heartsclient.view/GameView@" source="//@children.6" target="//@children.0" targetEnd="//@children.6/@sourceConnections.0/@children.2" label="//@children.6/@sourceConnections.0/@children.0" sourceEnd="//@children.6/@sourceConnections.0/@children.1" connectionRouterKind="Manhattan">
+      <children xsi:type="editmodel:WireLabelEditModel" size="0,10" anchorKind="MiddlePart"/>
+      <children xsi:type="editmodel:AssociationEndEditModel" location="0,193" id="com.cyberdyne.heartsclient.model/Room@aRoom+com.cyberdyne.heartsclient.view/GameView@|com.cyberdyne.heartsclient.view/GameView#" attachSource="true"/>
+      <children xsi:type="editmodel:AssociationEndEditModel" name="aRoom" location="157,154" id="com.cyberdyne.heartsclient.model/Room@aRoom+com.cyberdyne.heartsclient.view/GameView@|com.cyberdyne.heartsclient.model/Room#aRoom" multiplicityLabel="//@children.6/@sourceConnections.0/@children.2/@children.1" roleLabel="//@children.6/@sourceConnections.0/@children.2/@children.0" navigable="true">
+        <children xsi:type="editmodel:LabelEditModel" name=" - aRoom" location="1989,2403" size="37,10" anchorKind="LastPart"/>
+        <children xsi:type="editmodel:LabelEditModel" name="1" location="1989,2427" size="6,10" anchorKind="LastPart"/>
+      </children>
+    </sourceConnections>
+    <classifierPreferences xsi:type="editmodel:UMLClassDiagramClassifierPreference" showStereotype="true" attributeSorter="Natural" methodSorter="Natural" innerClassSorter="Natural" showPublicAttributes="true" showPackageAttributes="true" showStaticAttributes="true" showPublicMethods="true" showPackageMethods="true" showStaticMethods="true" showPublicInnerClasses="true" showPackageInnerClasses="true" showStaticInnerClasses="true" packageIndication="3" showAttributeProperty="true"/>
+  </children>
+  <children xsi:type="editmodel:ClassEditModel" targetConnections="//@children.10/@sourceConnections.2 //@children.0/@sourceConnections.1" name="Game" location="2445,1946" size="157,239" id="com.cyberdyne.heartsclient.model/Game" runTimeClassModel="setHands(Ljava.util.Vector;Ljava.lang.String;),setPlayedCard(Ljava.lang.String;Ljava.lang.String;),getHands(Ljava.lang.String;),lastTurn,Game(Lcom.cyberdyne.heartsclient.model.Room;),secondTurn,turnTaker,removeCards(Ljava.lang.String;Ljava.lang.String;Ljava.lang.String;),setIncomingCards(Ljava.lang.String;Ljava.lang.String;Ljava.lang.String;),joinIncomingCards()">
+    <children xsi:type="editmodel:CompartmentEditModel" size="101,54">
+      <children xsi:type="editmodel:AttributeEditModel" name="lastTurn" id="com.cyberdyne.heartsclient.model/Game#lastTurn"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="secondTurn" id="com.cyberdyne.heartsclient.model/Game#secondTurn"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="turnTaker" id="com.cyberdyne.heartsclient.model/Game#turnTaker"/>
+    </children>
+    <children xsi:type="editmodel:CompartmentEditModel" size="100,126">
+      <children xsi:type="editmodel:MethodEditModel" name="Game" id="com.cyberdyne.heartsclient.model/Game#Game(Lcom.cyberdyne.heartsclient.model.Room;)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="getHands" id="com.cyberdyne.heartsclient.model/Game#getHands(Ljava.lang.String;)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="joinIncomingCards" id="com.cyberdyne.heartsclient.model/Game#joinIncomingCards()"/>
+      <children xsi:type="editmodel:MethodEditModel" name="removeCards" id="com.cyberdyne.heartsclient.model/Game#removeCards(Ljava.lang.String;Ljava.lang.String;Ljava.lang.String;)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="setHands" id="com.cyberdyne.heartsclient.model/Game#setHands(Ljava.util.Vector;Ljava.lang.String;)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="setIncomingCards" id="com.cyberdyne.heartsclient.model/Game#setIncomingCards(Ljava.lang.String;Ljava.lang.String;Ljava.lang.String;)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="setPlayedCard" id="com.cyberdyne.heartsclient.model/Game#setPlayedCard(Ljava.lang.String;Ljava.lang.String;)"/>
+    </children>
+    <children xsi:type="editmodel:CompartmentEditModel"/>
+    <classifierPreferences xsi:type="editmodel:UMLClassDiagramClassifierPreference" showStereotype="true" attributeSorter="Natural" methodSorter="Natural" innerClassSorter="Natural" showPublicAttributes="true" showPackageAttributes="true" showStaticAttributes="true" showPublicMethods="true" showPackageMethods="true" showStaticMethods="true" showPublicInnerClasses="true" showPackageInnerClasses="true" showStaticInnerClasses="true" packageIndication="3" showAttributeProperty="true"/>
+  </children>
+  <children xsi:type="editmodel:ClassEditModel" name="ChatManager" location="681,997" size="111,103" id="com.cyberdyne.heartsclient.controller/ChatManager" runTimeClassModel="ChatManager(Ljava.lang.String;Z),userName,ChatManager()">
+    <children xsi:type="editmodel:CompartmentEditModel" size="86,18">
+      <children xsi:type="editmodel:AttributeEditModel" name="userName" id="com.cyberdyne.heartsclient.controller/ChatManager#userName"/>
+    </children>
+    <children xsi:type="editmodel:CompartmentEditModel" size="79,36">
+      <children xsi:type="editmodel:MethodEditModel" name="ChatManager" id="com.cyberdyne.heartsclient.controller/ChatManager#ChatManager()"/>
+      <children xsi:type="editmodel:MethodEditModel" name="ChatManager" id="com.cyberdyne.heartsclient.controller/ChatManager#ChatManager(Ljava.lang.String;Z)"/>
+    </children>
+    <children xsi:type="editmodel:CompartmentEditModel"/>
+    <sourceConnections xsi:type="editmodel:AssociationEditModel" autoLocated="true" id="com.cyberdyne.heartsclient.controller/ChatManager@lobbyChatManager+com.cyberdyne.heartsclient.view/ChatView@roomChatView" source="//@children.8" target="//@children.13" targetEnd="//@children.8/@sourceConnections.0/@children.2" label="//@children.8/@sourceConnections.0/@children.0" sourceEnd="//@children.8/@sourceConnections.0/@children.1" connectionRouterKind="Manhattan">
+      <children xsi:type="editmodel:WireLabelEditModel" size="0,10" anchorKind="MiddlePart"/>
+      <children xsi:type="editmodel:AssociationEndEditModel" name="lobbyChatManager" location="0,10" id="com.cyberdyne.heartsclient.controller/ChatManager@lobbyChatManager+com.cyberdyne.heartsclient.view/ChatView@roomChatView|com.cyberdyne.heartsclient.controller/ChatManager#lobbyChatManager" attachSource="true" multiplicityLabel="//@children.8/@sourceConnections.0/@children.1/@children.1" roleLabel="//@children.8/@sourceConnections.0/@children.1/@children.0" navigable="true">
+        <children xsi:type="editmodel:LabelEditModel" name=" - lobbyChatManager" location="591,1014" size="83,10" anchorKind="FirstPart"/>
+        <children xsi:type="editmodel:LabelEditModel" name="1" location="668,990" size="6,10" anchorKind="FirstPart"/>
+      </children>
+      <children xsi:type="editmodel:AssociationEndEditModel" name="roomChatView" location="140,131" id="com.cyberdyne.heartsclient.controller/ChatManager@lobbyChatManager+com.cyberdyne.heartsclient.view/ChatView@roomChatView|com.cyberdyne.heartsclient.view/ChatView#roomChatView" multiplicityLabel="//@children.8/@sourceConnections.0/@children.2/@children.1" roleLabel="//@children.8/@sourceConnections.0/@children.2/@children.0" navigable="true">
+        <children xsi:type="editmodel:LabelEditModel" name=" + roomChatView" location="114,980" size="69,10" anchorKind="LastPart"/>
+        <children xsi:type="editmodel:LabelEditModel" name="0..1" location="197,980" size="16,10" anchorKind="LastPart"/>
+      </children>
+    </sourceConnections>
+    <sourceConnections xsi:type="editmodel:AssociationEditModel" autoLocated="true" id="com.cyberdyne.heartsclient.view/ChatView@lobbyChatView+com.cyberdyne.heartsclient.controller/ChatManager@" source="//@children.8" target="//@children.13" targetEnd="//@children.8/@sourceConnections.1/@children.2" label="//@children.8/@sourceConnections.1/@children.0" sourceEnd="//@children.8/@sourceConnections.1/@children.1" connectionRouterKind="Manhattan">
+      <children xsi:type="editmodel:WireLabelEditModel" size="0,10" anchorKind="MiddlePart"/>
+      <children xsi:type="editmodel:AssociationEndEditModel" location="111,5" id="com.cyberdyne.heartsclient.view/ChatView@lobbyChatView+com.cyberdyne.heartsclient.controller/ChatManager@|com.cyberdyne.heartsclient.controller/ChatManager#" attachSource="true"/>
+      <children xsi:type="editmodel:AssociationEndEditModel" name="lobbyChatView" location="150,109" id="com.cyberdyne.heartsclient.view/ChatView@lobbyChatView+com.cyberdyne.heartsclient.controller/ChatManager@|com.cyberdyne.heartsclient.view/ChatView#lobbyChatView" multiplicityLabel="//@children.8/@sourceConnections.1/@children.2/@children.1" roleLabel="//@children.8/@sourceConnections.1/@children.2/@children.0" navigable="true">
+        <children xsi:type="editmodel:LabelEditModel" name=" - lobbyChatView" location="207,934" size="68,10" anchorKind="LastPart"/>
+        <children xsi:type="editmodel:LabelEditModel" name="0..1" location="207,958" size="16,10" anchorKind="LastPart"/>
+      </children>
+    </sourceConnections>
+    <sourceConnections xsi:type="editmodel:AssociationEditModel" autoLocated="true" id="com.cyberdyne.heartsclient.controller/ConnectionManager@connectionManager+com.cyberdyne.heartsclient.controller/ChatManager@" source="//@children.8" target="//@children.15" targetEnd="//@children.8/@sourceConnections.2/@children.2" label="//@children.8/@sourceConnections.2/@children.0" sourceEnd="//@children.8/@sourceConnections.2/@children.1" connectionRouterKind="Manhattan">
+      <children xsi:type="editmodel:WireLabelEditModel" size="0,10" anchorKind="MiddlePart"/>
+      <children xsi:type="editmodel:AssociationEndEditModel" location="101,103" id="com.cyberdyne.heartsclient.controller/ConnectionManager@connectionManager+com.cyberdyne.heartsclient.controller/ChatManager@|com.cyberdyne.heartsclient.controller/ChatManager#" attachSource="true"/>
+      <children xsi:type="editmodel:AssociationEndEditModel" name="connectionManager" location="0,10" id="com.cyberdyne.heartsclient.controller/ConnectionManager@connectionManager+com.cyberdyne.heartsclient.controller/ChatManager@|com.cyberdyne.heartsclient.controller/ConnectionManager#connectionManager" multiplicityLabel="//@children.8/@sourceConnections.2/@children.2/@children.1" roleLabel="//@children.8/@sourceConnections.2/@children.2/@children.0" navigable="true">
+        <children xsi:type="editmodel:LabelEditModel" name=" ~ connectionManager" location="1240,1354" size="87,10" anchorKind="LastPart"/>
+        <children xsi:type="editmodel:LabelEditModel" name="1" location="1321,1330" size="6,10" anchorKind="LastPart"/>
+      </children>
+    </sourceConnections>
+    <classifierPreferences xsi:type="editmodel:UMLClassDiagramClassifierPreference" showStereotype="true" attributeSorter="Natural" methodSorter="Natural" innerClassSorter="Natural" showPublicAttributes="true" showPackageAttributes="true" showStaticAttributes="true" showPublicMethods="true" showPackageMethods="true" showStaticMethods="true" showPublicInnerClasses="true" showPackageInnerClasses="true" showStaticInnerClasses="true" packageIndication="3" showAttributeProperty="true"/>
+  </children>
+  <children xsi:type="editmodel:ClassEditModel" targetConnections="//@children.15/@sourceConnections.6" name="MainListener" location="1944,1598" size="165,113" id="com.cyberdyne.heartsclient.listeners/MainListener" runTimeClassModel="MainListener(Lcom.cyberdyne.heartsclient.model.Room;Lcom.cyberdyne.heartsclient.view.GameView;),removeMainListener(),listen()">
+    <children xsi:type="editmodel:CompartmentEditModel"/>
+    <children xsi:type="editmodel:CompartmentEditModel" size="105,54">
+      <children xsi:type="editmodel:MethodEditModel" name="MainListener" id="com.cyberdyne.heartsclient.listeners/MainListener#MainListener(Lcom.cyberdyne.heartsclient.model.Room;Lcom.cyberdyne.heartsclient.view.GameView;)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="listen" id="com.cyberdyne.heartsclient.listeners/MainListener#listen()"/>
+      <children xsi:type="editmodel:MethodEditModel" name="removeMainListener" id="com.cyberdyne.heartsclient.listeners/MainListener#removeMainListener()"/>
+    </children>
+    <children xsi:type="editmodel:CompartmentEditModel"/>
+    <sourceConnections xsi:type="editmodel:AssociationEditModel" autoLocated="true" id="com.cyberdyne.heartsclient.view/GameView@tonotify+com.cyberdyne.heartsclient.listeners/MainListener@mainList" source="//@children.9" target="//@children.6" targetEnd="//@children.9/@sourceConnections.0/@children.2" label="//@children.9/@sourceConnections.0/@children.0" sourceEnd="//@children.9/@sourceConnections.0/@children.1" connectionRouterKind="Manhattan">
+      <children xsi:type="editmodel:WireLabelEditModel" size="0,10" anchorKind="MiddlePart"/>
+      <children xsi:type="editmodel:AssociationEndEditModel" name="mainList" location="155,113" id="com.cyberdyne.heartsclient.view/GameView@tonotify+com.cyberdyne.heartsclient.listeners/MainListener@mainList|com.cyberdyne.heartsclient.listeners/MainListener#mainList" attachSource="true" multiplicityLabel="//@children.9/@sourceConnections.0/@children.1/@children.1" roleLabel="//@children.9/@sourceConnections.0/@children.1/@children.0" navigable="true">
+        <children xsi:type="editmodel:LabelEditModel" name=" + mainList" location="2047,1718" size="45,10" anchorKind="FirstPart"/>
+        <children xsi:type="editmodel:LabelEditModel" name="1" location="2106,1718" size="6,10" anchorKind="FirstPart"/>
+      </children>
+      <children xsi:type="editmodel:AssociationEndEditModel" name="tonotify" location="0,10" id="com.cyberdyne.heartsclient.view/GameView@tonotify+com.cyberdyne.heartsclient.listeners/MainListener@mainList|com.cyberdyne.heartsclient.view/GameView#tonotify" multiplicityLabel="//@children.9/@sourceConnections.0/@children.2/@children.1" roleLabel="//@children.9/@sourceConnections.0/@children.2/@children.0" navigable="true">
+        <children xsi:type="editmodel:LabelEditModel" name=" - tonotify" location="2231,2244" size="40,10" anchorKind="LastPart"/>
+        <children xsi:type="editmodel:LabelEditModel" name="1" location="2265,2220" size="6,10" anchorKind="LastPart"/>
+      </children>
+    </sourceConnections>
+    <sourceConnections xsi:type="editmodel:AssociationEditModel" autoLocated="true" id="com.cyberdyne.heartsclient.model/Room@room+com.cyberdyne.heartsclient.listeners/MainListener@" source="//@children.9" target="//@children.0" targetEnd="//@children.9/@sourceConnections.1/@children.2" label="//@children.9/@sourceConnections.1/@children.0" sourceEnd="//@children.9/@sourceConnections.1/@children.1" connectionRouterKind="Manhattan">
+      <children xsi:type="editmodel:WireLabelEditModel" size="0,10" anchorKind="MiddlePart"/>
+      <children xsi:type="editmodel:AssociationEndEditModel" location="18,113" id="com.cyberdyne.heartsclient.model/Room@room+com.cyberdyne.heartsclient.listeners/MainListener@|com.cyberdyne.heartsclient.listeners/MainListener#" attachSource="true"/>
+      <children xsi:type="editmodel:AssociationEndEditModel" name="room" location="137,0" id="com.cyberdyne.heartsclient.model/Room@room+com.cyberdyne.heartsclient.listeners/MainListener@|com.cyberdyne.heartsclient.model/Room#room" multiplicityLabel="//@children.9/@sourceConnections.1/@children.2/@children.1" roleLabel="//@children.9/@sourceConnections.1/@children.2/@children.0" navigable="true">
+        <children xsi:type="editmodel:LabelEditModel" name=" - room" location="1969,2249" size="31,10" anchorKind="LastPart"/>
+        <children xsi:type="editmodel:LabelEditModel" name="1" location="1949,2249" size="6,10" anchorKind="LastPart"/>
+      </children>
+    </sourceConnections>
+    <classifierPreferences xsi:type="editmodel:UMLClassDiagramClassifierPreference" showStereotype="true" attributeSorter="Natural" methodSorter="Natural" innerClassSorter="Natural" showPublicAttributes="true" showPackageAttributes="true" showStaticAttributes="true" showPublicMethods="true" showPackageMethods="true" showStaticMethods="true" showPublicInnerClasses="true" showPackageInnerClasses="true" showStaticInnerClasses="true" packageIndication="3" showAttributeProperty="true"/>
+  </children>
+  <children xsi:type="editmodel:ClassEditModel" targetConnections="//@children.15/@sourceConnections.1" name="GameManager" location="1765,1904" size="127,175" id="com.cyberdyne.heartsclient.controller/GameManager" runTimeClassModel="startGame(Lcom.cyberdyne.heartsclient.model.Room;Z),exitGame(),sendMove(Ljava.lang.String;Ljava.lang.String;Ljava.lang.String;Ljava.lang.String;),userName,startGameSpectator(Lcom.cyberdyne.heartsclient.model.Room;),GameManager(),GameManager(Lcom.cyberdyne.heartsclient.model.Room;)">
+    <children xsi:type="editmodel:CompartmentEditModel" size="86,18">
+      <children xsi:type="editmodel:AttributeEditModel" name="userName" id="com.cyberdyne.heartsclient.controller/GameManager#userName"/>
+    </children>
+    <children xsi:type="editmodel:CompartmentEditModel" size="104,108">
+      <children xsi:type="editmodel:MethodEditModel" name="GameManager" id="com.cyberdyne.heartsclient.controller/GameManager#GameManager()"/>
+      <children xsi:type="editmodel:MethodEditModel" name="GameManager" id="com.cyberdyne.heartsclient.controller/GameManager#GameManager(Lcom.cyberdyne.heartsclient.model.Room;)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="exitGame" id="com.cyberdyne.heartsclient.controller/GameManager#exitGame()"/>
+      <children xsi:type="editmodel:MethodEditModel" name="sendMove" id="com.cyberdyne.heartsclient.controller/GameManager#sendMove(Ljava.lang.String;Ljava.lang.String;Ljava.lang.String;Ljava.lang.String;)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="startGame" id="com.cyberdyne.heartsclient.controller/GameManager#startGame(Lcom.cyberdyne.heartsclient.model.Room;Z)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="startGameSpectator" id="com.cyberdyne.heartsclient.controller/GameManager#startGameSpectator(Lcom.cyberdyne.heartsclient.model.Room;)"/>
+    </children>
+    <children xsi:type="editmodel:CompartmentEditModel"/>
+    <sourceConnections xsi:type="editmodel:AssociationEditModel" autoLocated="true" id="com.cyberdyne.heartsclient.controller/GameManager@gameManager+com.cyberdyne.heartsclient.view/GameView@gameView" source="//@children.10" target="//@children.6" targetEnd="//@children.10/@sourceConnections.0/@children.2" label="//@children.10/@sourceConnections.0/@children.0" sourceEnd="//@children.10/@sourceConnections.0/@children.1" connectionRouterKind="Manhattan">
+      <children xsi:type="editmodel:WireLabelEditModel" size="0,10" anchorKind="MiddlePart"/>
+      <children xsi:type="editmodel:AssociationEndEditModel" name="gameManager" location="127,165" id="com.cyberdyne.heartsclient.controller/GameManager@gameManager+com.cyberdyne.heartsclient.view/GameView@gameView|com.cyberdyne.heartsclient.controller/GameManager#gameManager" attachSource="true" multiplicityLabel="//@children.10/@sourceConnections.0/@children.1/@children.1" roleLabel="//@children.10/@sourceConnections.0/@children.1/@children.0" navigable="true">
+        <children xsi:type="editmodel:LabelEditModel" name=" - gameManager" location="1899,2052" size="65,10" anchorKind="FirstPart"/>
+        <children xsi:type="editmodel:LabelEditModel" name="1" location="1899,2076" size="6,10" anchorKind="FirstPart"/>
+      </children>
+      <children xsi:type="editmodel:AssociationEndEditModel" name="gameView" location="10,0" id="com.cyberdyne.heartsclient.controller/GameManager@gameManager+com.cyberdyne.heartsclient.view/GameView@gameView|com.cyberdyne.heartsclient.view/GameView#gameView" multiplicityLabel="//@children.10/@sourceConnections.0/@children.2/@children.1" roleLabel="//@children.10/@sourceConnections.0/@children.2/@children.0" navigable="true">
+        <children xsi:type="editmodel:LabelEditModel" name=" + gameView" location="2295,2210" size="51,10" anchorKind="LastPart"/>
+        <children xsi:type="editmodel:LabelEditModel" name="0..1" location="2265,2210" size="16,10" anchorKind="LastPart"/>
+      </children>
+    </sourceConnections>
+    <sourceConnections xsi:type="editmodel:AssociationEditModel" autoLocated="true" id="com.cyberdyne.heartsclient.model/Room@aRoom+com.cyberdyne.heartsclient.controller/GameManager@" source="//@children.10" target="//@children.0" targetEnd="//@children.10/@sourceConnections.1/@children.2" label="//@children.10/@sourceConnections.1/@children.0" sourceEnd="//@children.10/@sourceConnections.1/@children.1" connectionRouterKind="Manhattan">
+      <children xsi:type="editmodel:WireLabelEditModel" size="0,10" anchorKind="MiddlePart"/>
+      <children xsi:type="editmodel:AssociationEndEditModel" location="93,175" id="com.cyberdyne.heartsclient.model/Room@aRoom+com.cyberdyne.heartsclient.controller/GameManager@|com.cyberdyne.heartsclient.controller/GameManager#" attachSource="true"/>
+      <children xsi:type="editmodel:AssociationEndEditModel" name="aRoom" location="33,0" id="com.cyberdyne.heartsclient.model/Room@aRoom+com.cyberdyne.heartsclient.controller/GameManager@|com.cyberdyne.heartsclient.model/Room#aRoom" multiplicityLabel="//@children.10/@sourceConnections.1/@children.2/@children.1" roleLabel="//@children.10/@sourceConnections.1/@children.2/@children.0" navigable="true" changeability="2">
+        <children xsi:type="editmodel:LabelEditModel" name=" - aRoom" location="1865,2249" size="37,10" anchorKind="LastPart"/>
+        <children xsi:type="editmodel:LabelEditModel" name="0..1" location="1835,2249" size="16,10" anchorKind="LastPart"/>
+      </children>
+    </sourceConnections>
+    <sourceConnections xsi:type="editmodel:AssociationEditModel" autoLocated="true" id="com.cyberdyne.heartsclient.model/Game@game+com.cyberdyne.heartsclient.controller/GameManager@" source="//@children.10" target="//@children.7" targetEnd="//@children.10/@sourceConnections.2/@children.2" label="//@children.10/@sourceConnections.2/@children.0" sourceEnd="//@children.10/@sourceConnections.2/@children.1" connectionRouterKind="Manhattan">
+      <children xsi:type="editmodel:WireLabelEditModel" size="0,10" anchorKind="MiddlePart"/>
+      <children xsi:type="editmodel:AssociationEndEditModel" location="127,108" id="com.cyberdyne.heartsclient.model/Game@game+com.cyberdyne.heartsclient.controller/GameManager@|com.cyberdyne.heartsclient.controller/GameManager#" attachSource="true"/>
+      <children xsi:type="editmodel:AssociationEndEditModel" name="game" location="0,66" id="com.cyberdyne.heartsclient.model/Game@game+com.cyberdyne.heartsclient.controller/GameManager@|com.cyberdyne.heartsclient.model/Game#game" multiplicityLabel="//@children.10/@sourceConnections.2/@children.2/@children.1" roleLabel="//@children.10/@sourceConnections.2/@children.2/@children.0" navigable="true">
+        <children xsi:type="editmodel:LabelEditModel" name=" - game" location="2406,1995" size="32,10" anchorKind="LastPart"/>
+        <children xsi:type="editmodel:LabelEditModel" name="0..1" location="2422,2019" size="16,10" anchorKind="LastPart"/>
+      </children>
+    </sourceConnections>
+    <sourceConnections xsi:type="editmodel:AssociationEditModel" autoLocated="true" id="com.cyberdyne.heartsclient.controller/GameManager@gameManager+com.cyberdyne.heartsclient.controller/JabberSmackAPI@" source="//@children.10" target="//@children.5" targetEnd="//@children.10/@sourceConnections.3/@children.2" label="//@children.10/@sourceConnections.3/@children.0" sourceEnd="//@children.10/@sourceConnections.3/@children.1" connectionRouterKind="Manhattan">
+      <children xsi:type="editmodel:WireLabelEditModel" size="0,10" anchorKind="MiddlePart"/>
+      <children xsi:type="editmodel:AssociationEndEditModel" name="gameManager" location="10,175" id="com.cyberdyne.heartsclient.controller/GameManager@gameManager+com.cyberdyne.heartsclient.controller/JabberSmackAPI@|com.cyberdyne.heartsclient.controller/GameManager#gameManager" attachSource="true" multiplicityLabel="//@children.10/@sourceConnections.3/@children.1/@children.1" roleLabel="//@children.10/@sourceConnections.3/@children.1/@children.0" navigable="true" changeability="2">
+        <children xsi:type="editmodel:LabelEditModel" name=" - gameManager" location="1782,2086" size="65,10" anchorKind="FirstPart"/>
+        <children xsi:type="editmodel:LabelEditModel" name="0..1" location="1752,2086" size="16,10" anchorKind="FirstPart"/>
+      </children>
+      <children xsi:type="editmodel:AssociationEndEditModel" location="126,10" id="com.cyberdyne.heartsclient.controller/GameManager@gameManager+com.cyberdyne.heartsclient.controller/JabberSmackAPI@|com.cyberdyne.heartsclient.controller/JabberSmackAPI#"/>
+    </sourceConnections>
+    <classifierPreferences xsi:type="editmodel:UMLClassDiagramClassifierPreference" showStereotype="true" attributeSorter="Natural" methodSorter="Natural" innerClassSorter="Natural" showPublicAttributes="true" showPackageAttributes="true" showStaticAttributes="true" showPublicMethods="true" showPackageMethods="true" showStaticMethods="true" showPublicInnerClasses="true" showPackageInnerClasses="true" showStaticInnerClasses="true" packageIndication="3" showAttributeProperty="true"/>
+  </children>
+  <children xsi:type="editmodel:ClassEditModel" targetConnections="//@children.2/@sourceConnections.0" name="RegistrationView" location="1529,50" size="150,77" id="com.cyberdyne.heartsclient.view/RegistrationView" runTimeClassModel="RegistrationView(Lcom.cyberdyne.heartsclient.controller.RegistrationManager;)">
+    <children xsi:type="editmodel:CompartmentEditModel"/>
+    <children xsi:type="editmodel:CompartmentEditModel" size="92,18">
+      <children xsi:type="editmodel:MethodEditModel" name="RegistrationView" id="com.cyberdyne.heartsclient.view/RegistrationView#RegistrationView(Lcom.cyberdyne.heartsclient.controller.RegistrationManager;)"/>
+    </children>
+    <children xsi:type="editmodel:CompartmentEditModel"/>
+    <classifierPreferences xsi:type="editmodel:UMLClassDiagramClassifierPreference" showStereotype="true" attributeSorter="Natural" methodSorter="Natural" innerClassSorter="Natural" showPublicAttributes="true" showPackageAttributes="true" showStaticAttributes="true" showPublicMethods="true" showPackageMethods="true" showStaticMethods="true" showPublicInnerClasses="true" showPackageInnerClasses="true" showStaticInnerClasses="true" packageIndication="3" showAttributeProperty="true"/>
+  </children>
+  <children xsi:type="editmodel:ClassEditModel" targetConnections="//@children.15/@sourceConnections.2 //@children.14/@sourceConnections.0" name="LobbyManager" location="821,1499" size="121,229" id="com.cyberdyne.heartsclient.controller/LobbyManager" runTimeClassModel="LobbyManager(),getRoomStatus(Ljava.lang.String;),setJoinedRoom(Lcom.cyberdyne.heartsclient.model.Room;),getRoomList(),getUserStatus(Ljava.lang.String;),createRoom(Ljava.lang.String;I),userName,getUserList(Ljava.lang.String;),roomCreated,joinRoom(Ljava.lang.String;)">
+    <children xsi:type="editmodel:CompartmentEditModel" size="98,36">
+      <children xsi:type="editmodel:AttributeEditModel" name="roomCreated" id="com.cyberdyne.heartsclient.controller/LobbyManager#roomCreated"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="userName" id="com.cyberdyne.heartsclient.controller/LobbyManager#userName"/>
+    </children>
+    <children xsi:type="editmodel:CompartmentEditModel" size="86,144">
+      <children xsi:type="editmodel:MethodEditModel" name="LobbyManager" id="com.cyberdyne.heartsclient.controller/LobbyManager#LobbyManager()"/>
+      <children xsi:type="editmodel:MethodEditModel" name="createRoom" id="com.cyberdyne.heartsclient.controller/LobbyManager#createRoom(Ljava.lang.String;I)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="getRoomList" id="com.cyberdyne.heartsclient.controller/LobbyManager#getRoomList()"/>
+      <children xsi:type="editmodel:MethodEditModel" name="getRoomStatus" id="com.cyberdyne.heartsclient.controller/LobbyManager#getRoomStatus(Ljava.lang.String;)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="getUserList" id="com.cyberdyne.heartsclient.controller/LobbyManager#getUserList(Ljava.lang.String;)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="getUserStatus" id="com.cyberdyne.heartsclient.controller/LobbyManager#getUserStatus(Ljava.lang.String;)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="joinRoom" id="com.cyberdyne.heartsclient.controller/LobbyManager#joinRoom(Ljava.lang.String;)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="setJoinedRoom" id="com.cyberdyne.heartsclient.controller/LobbyManager#setJoinedRoom(Lcom.cyberdyne.heartsclient.model.Room;)"/>
+    </children>
+    <children xsi:type="editmodel:CompartmentEditModel"/>
+    <sourceConnections xsi:type="editmodel:AssociationEditModel" autoLocated="true" id="com.cyberdyne.heartsclient.listeners/QueryListener@queryListener+com.cyberdyne.heartsclient.controller/LobbyManager@" source="//@children.12" target="//@children.1" targetEnd="//@children.12/@sourceConnections.0/@children.2" label="//@children.12/@sourceConnections.0/@children.0" sourceEnd="//@children.12/@sourceConnections.0/@children.1" connectionRouterKind="Manhattan">
+      <children xsi:type="editmodel:WireLabelEditModel" size="0,10" anchorKind="MiddlePart"/>
+      <children xsi:type="editmodel:AssociationEndEditModel" location="121,219" id="com.cyberdyne.heartsclient.listeners/QueryListener@queryListener+com.cyberdyne.heartsclient.controller/LobbyManager@|com.cyberdyne.heartsclient.controller/LobbyManager#" attachSource="true"/>
+      <children xsi:type="editmodel:AssociationEndEditModel" name="queryListener" location="10,0" id="com.cyberdyne.heartsclient.listeners/QueryListener@queryListener+com.cyberdyne.heartsclient.controller/LobbyManager@|com.cyberdyne.heartsclient.listeners/QueryListener#queryListener" multiplicityLabel="//@children.12/@sourceConnections.0/@children.2/@children.1" roleLabel="//@children.12/@sourceConnections.0/@children.2/@children.0" navigable="true">
+        <children xsi:type="editmodel:LabelEditModel" name=" - queryListener" location="1239,1895" size="63,10" anchorKind="LastPart"/>
+        <children xsi:type="editmodel:LabelEditModel" name="1" location="1219,1895" size="6,10" anchorKind="LastPart"/>
+      </children>
+    </sourceConnections>
+    <classifierPreferences xsi:type="editmodel:UMLClassDiagramClassifierPreference" showStereotype="true" attributeSorter="Natural" methodSorter="Natural" innerClassSorter="Natural" showPublicAttributes="true" showPackageAttributes="true" showStaticAttributes="true" showPublicMethods="true" showPackageMethods="true" showStaticMethods="true" showPublicInnerClasses="true" showPackageInnerClasses="true" showStaticInnerClasses="true" packageIndication="3" showAttributeProperty="true"/>
+  </children>
+  <children xsi:type="editmodel:ClassEditModel" targetConnections="//@children.8/@sourceConnections.0 //@children.8/@sourceConnections.1" name="ChatView" location="50,842" size="150,131" id="com.cyberdyne.heartsclient.view/ChatView" runTimeClassModel="actionPerformed(Ljava.awt.event.ActionEvent;),ChatView(Lcom.cyberdyne.heartsclient.controller.ChatManager;),writeReceivedMessage(Ljava.lang.String;Ljava.lang.String;),ChatView(Lcom.cyberdyne.heartsclient.controller.ChatManager;Ljava.lang.String;Z)">
+    <children xsi:type="editmodel:CompartmentEditModel"/>
+    <children xsi:type="editmodel:CompartmentEditModel" size="114,72">
+      <children xsi:type="editmodel:MethodEditModel" name="ChatView" id="com.cyberdyne.heartsclient.view/ChatView#ChatView(Lcom.cyberdyne.heartsclient.controller.ChatManager;)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="ChatView" id="com.cyberdyne.heartsclient.view/ChatView#ChatView(Lcom.cyberdyne.heartsclient.controller.ChatManager;Ljava.lang.String;Z)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="actionPerformed" id="com.cyberdyne.heartsclient.view/ChatView#actionPerformed(Ljava.awt.event.ActionEvent;)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="writeReceivedMessage" id="com.cyberdyne.heartsclient.view/ChatView#writeReceivedMessage(Ljava.lang.String;Ljava.lang.String;)"/>
+    </children>
+    <children xsi:type="editmodel:CompartmentEditModel"/>
+    <classifierPreferences xsi:type="editmodel:UMLClassDiagramClassifierPreference" showStereotype="true" attributeSorter="Natural" methodSorter="Natural" innerClassSorter="Natural" showPublicAttributes="true" showPackageAttributes="true" showStaticAttributes="true" showPublicMethods="true" showPackageMethods="true" showStaticMethods="true" showPublicInnerClasses="true" showPackageInnerClasses="true" showStaticInnerClasses="true" packageIndication="3" showAttributeProperty="true"/>
+  </children>
+  <children xsi:type="editmodel:ClassEditModel" targetConnections="//@children.15/@sourceConnections.0" name="LobbyView" location="771,1854" size="150,131" id="com.cyberdyne.heartsclient.view/LobbyView" runTimeClassModel="statusUser(Ljava.lang.String;),statusRoom(Ljava.lang.String;),userName,LobbyView(Lcom.cyberdyne.heartsclient.controller.LobbyManager;)">
+    <children xsi:type="editmodel:CompartmentEditModel" size="86,18">
+      <children xsi:type="editmodel:AttributeEditModel" name="userName" id="com.cyberdyne.heartsclient.view/LobbyView#userName"/>
+    </children>
+    <children xsi:type="editmodel:CompartmentEditModel" size="73,54">
+      <children xsi:type="editmodel:MethodEditModel" name="LobbyView" id="com.cyberdyne.heartsclient.view/LobbyView#LobbyView(Lcom.cyberdyne.heartsclient.controller.LobbyManager;)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="statusRoom" id="com.cyberdyne.heartsclient.view/LobbyView#statusRoom(Ljava.lang.String;)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="statusUser" id="com.cyberdyne.heartsclient.view/LobbyView#statusUser(Ljava.lang.String;)"/>
+    </children>
+    <children xsi:type="editmodel:CompartmentEditModel"/>
+    <sourceConnections xsi:type="editmodel:AssociationEditModel" autoLocated="true" id="com.cyberdyne.heartsclient.view/LobbyView@lobbyView+com.cyberdyne.heartsclient.controller/LobbyManager@roomManager" source="//@children.14" target="//@children.12" targetEnd="//@children.14/@sourceConnections.0/@children.2" label="//@children.14/@sourceConnections.0/@children.0" sourceEnd="//@children.14/@sourceConnections.0/@children.1" connectionRouterKind="Manhattan">
+      <children xsi:type="editmodel:WireLabelEditModel" size="0,10" anchorKind="MiddlePart"/>
+      <children xsi:type="editmodel:AssociationEndEditModel" name="lobbyView" location="99,0" id="com.cyberdyne.heartsclient.view/LobbyView@lobbyView+com.cyberdyne.heartsclient.controller/LobbyManager@roomManager|com.cyberdyne.heartsclient.view/LobbyView#lobbyView" attachSource="true" multiplicityLabel="//@children.14/@sourceConnections.0/@children.1/@children.1" roleLabel="//@children.14/@sourceConnections.0/@children.1/@children.0" navigable="true">
+        <children xsi:type="editmodel:LabelEditModel" name=" ~ lobbyView" location="877,1837" size="50,10" anchorKind="FirstPart"/>
+        <children xsi:type="editmodel:LabelEditModel" name="1" location="857,1837" size="6,10" anchorKind="FirstPart"/>
+      </children>
+      <children xsi:type="editmodel:AssociationEndEditModel" name="roomManager" location="49,229" id="com.cyberdyne.heartsclient.view/LobbyView@lobbyView+com.cyberdyne.heartsclient.controller/LobbyManager@roomManager|com.cyberdyne.heartsclient.controller/LobbyManager#roomManager" multiplicityLabel="//@children.14/@sourceConnections.0/@children.2/@children.1" roleLabel="//@children.14/@sourceConnections.0/@children.2/@children.0" navigable="true">
+        <children xsi:type="editmodel:LabelEditModel" name=" + roomManager" location="877,1735" size="66,10" anchorKind="LastPart"/>
+        <children xsi:type="editmodel:LabelEditModel" name="1" location="857,1735" size="6,10" anchorKind="LastPart"/>
+      </children>
+    </sourceConnections>
+    <sourceConnections xsi:type="editmodel:AssociationEditModel" autoLocated="true" id="com.cyberdyne.heartsclient.view/LobbyView@tonotify+com.cyberdyne.heartsclient.listeners/QueryListener@" source="//@children.14" target="//@children.1" targetEnd="//@children.14/@sourceConnections.1/@children.2" label="//@children.14/@sourceConnections.1/@children.0" sourceEnd="//@children.14/@sourceConnections.1/@children.1" connectionRouterKind="Manhattan">
+      <children xsi:type="editmodel:WireLabelEditModel" size="0,10" anchorKind="MiddlePart"/>
+      <children xsi:type="editmodel:AssociationEndEditModel" name="tonotify" location="150,94" id="com.cyberdyne.heartsclient.view/LobbyView@tonotify+com.cyberdyne.heartsclient.listeners/QueryListener@|com.cyberdyne.heartsclient.view/LobbyView#tonotify" attachSource="true" multiplicityLabel="//@children.14/@sourceConnections.1/@children.1/@children.1" roleLabel="//@children.14/@sourceConnections.1/@children.1/@children.0" navigable="true">
+        <children xsi:type="editmodel:LabelEditModel" name=" - tonotify" location="928,1931" size="40,10" anchorKind="FirstPart"/>
+        <children xsi:type="editmodel:LabelEditModel" name="1" location="928,1955" size="6,10" anchorKind="FirstPart"/>
+      </children>
+      <children xsi:type="editmodel:AssociationEndEditModel" location="0,36" id="com.cyberdyne.heartsclient.view/LobbyView@tonotify+com.cyberdyne.heartsclient.listeners/QueryListener@|com.cyberdyne.heartsclient.listeners/QueryListener#"/>
+    </sourceConnections>
+    <classifierPreferences xsi:type="editmodel:UMLClassDiagramClassifierPreference" showStereotype="true" attributeSorter="Natural" methodSorter="Natural" innerClassSorter="Natural" showPublicAttributes="true" showPackageAttributes="true" showStaticAttributes="true" showPublicMethods="true" showPackageMethods="true" showStaticMethods="true" showPublicInnerClasses="true" showPackageInnerClasses="true" showStaticInnerClasses="true" packageIndication="3" showAttributeProperty="true"/>
+  </children>
+  <children xsi:type="editmodel:ClassEditModel" targetConnections="//@children.8/@sourceConnections.2 //@children.15/@sourceConnections.5" name="ConnectionManager" location="1334,1337" size="155,103" id="com.cyberdyne.heartsclient.controller/ConnectionManager" runTimeClassModel="getConnectionManager(),connection,ConnectionManager()">
+    <children xsi:type="editmodel:CompartmentEditModel" size="132,18">
+      <children xsi:type="editmodel:AttributeEditModel" name="connection" id="com.cyberdyne.heartsclient.controller/ConnectionManager#connection"/>
+    </children>
+    <children xsi:type="editmodel:CompartmentEditModel" size="117,36">
+      <children xsi:type="editmodel:MethodEditModel" name="ConnectionManager" id="com.cyberdyne.heartsclient.controller/ConnectionManager#ConnectionManager()"/>
+    </children>
+    <children xsi:type="editmodel:CompartmentEditModel"/>
+    <sourceConnections xsi:type="editmodel:AssociationEditModel" autoLocated="true" id="com.cyberdyne.heartsclient.controller/ConnectionManager@connectionManager+com.cyberdyne.heartsclient.view/LobbyView@" source="//@children.15" target="//@children.14" targetEnd="//@children.15/@sourceConnections.0/@children.2" label="//@children.15/@sourceConnections.0/@children.0" sourceEnd="//@children.15/@sourceConnections.0/@children.1" connectionRouterKind="Manhattan">
+      <children xsi:type="editmodel:WireLabelEditModel" size="0,10" anchorKind="MiddlePart"/>
+      <children xsi:type="editmodel:AssociationEndEditModel" name="connectionManager" location="10,103" id="com.cyberdyne.heartsclient.controller/ConnectionManager@connectionManager+com.cyberdyne.heartsclient.view/LobbyView@|com.cyberdyne.heartsclient.controller/ConnectionManager#connectionManager" attachSource="true" multiplicityLabel="//@children.15/@sourceConnections.0/@children.1/@children.1" roleLabel="//@children.15/@sourceConnections.0/@children.1/@children.0" navigable="true">
+        <children xsi:type="editmodel:LabelEditModel" name=" ~ connectionManager" location="1351,1447" size="87,10" anchorKind="FirstPart"/>
+        <children xsi:type="editmodel:LabelEditModel" name="1" location="1331,1447" size="6,10" anchorKind="FirstPart"/>
+      </children>
+      <children xsi:type="editmodel:AssociationEndEditModel" location="150,10" id="com.cyberdyne.heartsclient.controller/ConnectionManager@connectionManager+com.cyberdyne.heartsclient.view/LobbyView@|com.cyberdyne.heartsclient.view/LobbyView#"/>
+    </sourceConnections>
+    <sourceConnections xsi:type="editmodel:AssociationEditModel" autoLocated="true" id="com.cyberdyne.heartsclient.controller/ConnectionManager@connectionManager+com.cyberdyne.heartsclient.controller/GameManager@" source="//@children.15" target="//@children.10" targetEnd="//@children.15/@sourceConnections.1/@children.2" label="//@children.15/@sourceConnections.1/@children.0" sourceEnd="//@children.15/@sourceConnections.1/@children.1" connectionRouterKind="Manhattan">
+      <children xsi:type="editmodel:WireLabelEditModel" size="0,10" anchorKind="MiddlePart"/>
+      <children xsi:type="editmodel:AssociationEndEditModel" name="connectionManager" location="145,103" id="com.cyberdyne.heartsclient.controller/ConnectionManager@connectionManager+com.cyberdyne.heartsclient.controller/GameManager@|com.cyberdyne.heartsclient.controller/ConnectionManager#connectionManager" attachSource="true" multiplicityLabel="//@children.15/@sourceConnections.1/@children.1/@children.1" roleLabel="//@children.15/@sourceConnections.1/@children.1/@children.0" navigable="true">
+        <children xsi:type="editmodel:LabelEditModel" name=" ~ connectionManager" location="1385,1447" size="87,10" anchorKind="FirstPart"/>
+        <children xsi:type="editmodel:LabelEditModel" name="1" location="1486,1447" size="6,10" anchorKind="FirstPart"/>
+      </children>
+      <children xsi:type="editmodel:AssociationEndEditModel" location="0,10" id="com.cyberdyne.heartsclient.controller/ConnectionManager@connectionManager+com.cyberdyne.heartsclient.controller/GameManager@|com.cyberdyne.heartsclient.controller/GameManager#"/>
+    </sourceConnections>
+    <sourceConnections xsi:type="editmodel:AssociationEditModel" autoLocated="true" id="com.cyberdyne.heartsclient.controller/ConnectionManager@connectionManager+com.cyberdyne.heartsclient.controller/LobbyManager@" source="//@children.15" target="//@children.12" targetEnd="//@children.15/@sourceConnections.2/@children.2" label="//@children.15/@sourceConnections.2/@children.0" sourceEnd="//@children.15/@sourceConnections.2/@children.1" connectionRouterKind="Manhattan">
+      <children xsi:type="editmodel:WireLabelEditModel" size="0,10" anchorKind="MiddlePart"/>
+      <children xsi:type="editmodel:AssociationEndEditModel" name="connectionManager" location="0,93" id="com.cyberdyne.heartsclient.controller/ConnectionManager@connectionManager+com.cyberdyne.heartsclient.controller/LobbyManager@|com.cyberdyne.heartsclient.controller/ConnectionManager#connectionManager" attachSource="true" multiplicityLabel="//@children.15/@sourceConnections.2/@children.1/@children.1" roleLabel="//@children.15/@sourceConnections.2/@children.1/@children.0" navigable="true">
+        <children xsi:type="editmodel:LabelEditModel" name=" ~ connectionManager" location="1240,1413" size="87,10" anchorKind="FirstPart"/>
+        <children xsi:type="editmodel:LabelEditModel" name="1" location="1321,1437" size="6,10" anchorKind="FirstPart"/>
+      </children>
+      <children xsi:type="editmodel:AssociationEndEditModel" location="111,0" id="com.cyberdyne.heartsclient.controller/ConnectionManager@connectionManager+com.cyberdyne.heartsclient.controller/LobbyManager@|com.cyberdyne.heartsclient.controller/LobbyManager#"/>
+    </sourceConnections>
+    <sourceConnections xsi:type="editmodel:AssociationEditModel" autoLocated="true" id="com.cyberdyne.heartsclient.controller/ConnectionManager@connectionManager+com.cyberdyne.heartsclient.controller/LoginManager@" source="//@children.15" target="//@children.4" targetEnd="//@children.15/@sourceConnections.3/@children.2" label="//@children.15/@sourceConnections.3/@children.0" sourceEnd="//@children.15/@sourceConnections.3/@children.1" connectionRouterKind="Manhattan">
+      <children xsi:type="editmodel:WireLabelEditModel" size="0,10" anchorKind="MiddlePart"/>
+      <children xsi:type="editmodel:AssociationEndEditModel" name="connectionManager" location="128,0" id="com.cyberdyne.heartsclient.controller/ConnectionManager@connectionManager+com.cyberdyne.heartsclient.controller/LoginManager@|com.cyberdyne.heartsclient.controller/ConnectionManager#connectionManager" attachSource="true" multiplicityLabel="//@children.15/@sourceConnections.3/@children.1/@children.1" roleLabel="//@children.15/@sourceConnections.3/@children.1/@children.0" navigable="true">
+        <children xsi:type="editmodel:LabelEditModel" name=" ~ connectionManager" location="1469,1320" size="87,10" anchorKind="FirstPart"/>
+        <children xsi:type="editmodel:LabelEditModel" name="1" location="1449,1320" size="6,10" anchorKind="FirstPart"/>
+      </children>
+      <children xsi:type="editmodel:AssociationEndEditModel" location="26,85" id="com.cyberdyne.heartsclient.controller/ConnectionManager@connectionManager+com.cyberdyne.heartsclient.controller/LoginManager@|com.cyberdyne.heartsclient.controller/LoginManager#"/>
+    </sourceConnections>
+    <sourceConnections xsi:type="editmodel:AssociationEditModel" autoLocated="true" id="com.cyberdyne.heartsclient.controller/ConnectionManager@connectionManager+com.cyberdyne.heartsclient.controller/RegistrationManager@" source="//@children.15" target="//@children.2" targetEnd="//@children.15/@sourceConnections.4/@children.2" label="//@children.15/@sourceConnections.4/@children.0" sourceEnd="//@children.15/@sourceConnections.4/@children.1" connectionRouterKind="Manhattan">
+      <children xsi:type="editmodel:WireLabelEditModel" size="0,10" anchorKind="MiddlePart"/>
+      <children xsi:type="editmodel:AssociationEndEditModel" name="connectionManager" location="145,0" id="com.cyberdyne.heartsclient.controller/ConnectionManager@connectionManager+com.cyberdyne.heartsclient.controller/RegistrationManager@|com.cyberdyne.heartsclient.controller/ConnectionManager#connectionManager" attachSource="true" multiplicityLabel="//@children.15/@sourceConnections.4/@children.1/@children.1" roleLabel="//@children.15/@sourceConnections.4/@children.1/@children.0" navigable="true">
+        <children xsi:type="editmodel:LabelEditModel" name=" ~ connectionManager" location="1385,1320" size="87,10" anchorKind="FirstPart"/>
+        <children xsi:type="editmodel:LabelEditModel" name="1" location="1486,1320" size="6,10" anchorKind="FirstPart"/>
+      </children>
+      <children xsi:type="editmodel:AssociationEndEditModel" location="0,75" id="com.cyberdyne.heartsclient.controller/ConnectionManager@connectionManager+com.cyberdyne.heartsclient.controller/RegistrationManager@|com.cyberdyne.heartsclient.controller/RegistrationManager#"/>
+    </sourceConnections>
+    <sourceConnections xsi:type="editmodel:AssociationEditModel" autoLocated="true" id="com.cyberdyne.heartsclient.controller/ConnectionManager@connectionManager+com.cyberdyne.heartsclient.controller/ConnectionManager@" source="//@children.15" target="//@children.15" targetEnd="//@children.15/@sourceConnections.5/@children.2" label="//@children.15/@sourceConnections.5/@children.0" sourceEnd="//@children.15/@sourceConnections.5/@children.1" connectionRouterKind="Manhattan">
+      <children xsi:type="editmodel:WireLabelEditModel" size="0,10" anchorKind="MiddlePart"/>
+      <children xsi:type="editmodel:AssociationEndEditModel" name="connectionManager" location="0,20" id="com.cyberdyne.heartsclient.controller/ConnectionManager@connectionManager+com.cyberdyne.heartsclient.controller/ConnectionManager@|com.cyberdyne.heartsclient.controller/ConnectionManager#connectionManager" anchorKind="FixedAtEdge" attachSource="true" multiplicityLabel="//@children.15/@sourceConnections.5/@children.1/@children.2" roleLabel="//@children.15/@sourceConnections.5/@children.1/@children.0" orderingLabel="//@children.15/@sourceConnections.5/@children.1/@children.1" scopeKind="1" navigable="true">
+        <children xsi:type="editmodel:LabelEditModel" name=" - connectionManager" location="1241,1364" size="86,10" anchorKind="FirstPart"/>
+        <children xsi:type="editmodel:LabelEditModel" name="{order}" location="1300,1340" size="27,10" anchorKind="FirstPart"/>
+        <children xsi:type="editmodel:LabelEditModel" name="1" location="1321,1374" size="6,10" anchorKind="FirstPart"/>
+      </children>
+      <children xsi:type="editmodel:AssociationEndEditModel" location="20,0" id="com.cyberdyne.heartsclient.controller/ConnectionManager@connectionManager+com.cyberdyne.heartsclient.controller/ConnectionManager@|com.cyberdyne.heartsclient.controller/ConnectionManager#" anchorKind="FixedAtEdge"/>
+    </sourceConnections>
+    <sourceConnections xsi:type="editmodel:AssociationEditModel" autoLocated="true" id="com.cyberdyne.heartsclient.controller/ConnectionManager@connectionManager+com.cyberdyne.heartsclient.listeners/MainListener@" source="//@children.15" target="//@children.9" targetEnd="//@children.15/@sourceConnections.6/@children.2" label="//@children.15/@sourceConnections.6/@children.0" sourceEnd="//@children.15/@sourceConnections.6/@children.1" connectionRouterKind="Manhattan">
+      <children xsi:type="editmodel:WireLabelEditModel" size="0,10" anchorKind="MiddlePart"/>
+      <children xsi:type="editmodel:AssociationEndEditModel" name="connectionManager" location="155,93" id="com.cyberdyne.heartsclient.controller/ConnectionManager@connectionManager+com.cyberdyne.heartsclient.listeners/MainListener@|com.cyberdyne.heartsclient.controller/ConnectionManager#connectionManager" attachSource="true" multiplicityLabel="//@children.15/@sourceConnections.6/@children.1/@children.1" roleLabel="//@children.15/@sourceConnections.6/@children.1/@children.0" navigable="true">
+        <children xsi:type="editmodel:LabelEditModel" name=" - connectionManager" location="1496,1413" size="86,10" anchorKind="FirstPart"/>
+        <children xsi:type="editmodel:LabelEditModel" name="1" location="1496,1437" size="6,10" anchorKind="FirstPart"/>
+      </children>
+      <children xsi:type="editmodel:AssociationEndEditModel" location="10,0" id="com.cyberdyne.heartsclient.controller/ConnectionManager@connectionManager+com.cyberdyne.heartsclient.listeners/MainListener@|com.cyberdyne.heartsclient.listeners/MainListener#"/>
+    </sourceConnections>
+    <sourceConnections xsi:type="editmodel:AssociationEditModel" autoLocated="true" id="com.cyberdyne.heartsclient.controller/ConnectionManager@connectionManager+com.cyberdyne.heartsclient.listeners/QueryListener@" source="//@children.15" target="//@children.1" targetEnd="//@children.15/@sourceConnections.7/@children.2" label="//@children.15/@sourceConnections.7/@children.0" sourceEnd="//@children.15/@sourceConnections.7/@children.1" connectionRouterKind="Manhattan">
+      <children xsi:type="editmodel:WireLabelEditModel" size="0,10" anchorKind="MiddlePart"/>
+      <children xsi:type="editmodel:AssociationEndEditModel" name="connectionManager" location="26,103" id="com.cyberdyne.heartsclient.controller/ConnectionManager@connectionManager+com.cyberdyne.heartsclient.listeners/QueryListener@|com.cyberdyne.heartsclient.controller/ConnectionManager#connectionManager" attachSource="true" multiplicityLabel="//@children.15/@sourceConnections.7/@children.1/@children.1" roleLabel="//@children.15/@sourceConnections.7/@children.1/@children.0" navigable="true">
+        <children xsi:type="editmodel:LabelEditModel" name=" - connectionManager" location="1367,1447" size="86,10" anchorKind="FirstPart"/>
+        <children xsi:type="editmodel:LabelEditModel" name="1" location="1347,1447" size="6,10" anchorKind="FirstPart"/>
+      </children>
+      <children xsi:type="editmodel:AssociationEndEditModel" location="138,0" id="com.cyberdyne.heartsclient.controller/ConnectionManager@connectionManager+com.cyberdyne.heartsclient.listeners/QueryListener@|com.cyberdyne.heartsclient.listeners/QueryListener#"/>
+    </sourceConnections>
+    <classifierPreferences xsi:type="editmodel:UMLClassDiagramClassifierPreference" showStereotype="true" attributeSorter="Natural" methodSorter="Natural" innerClassSorter="Natural" showPublicAttributes="true" showPackageAttributes="true" showStaticAttributes="true" showPublicMethods="true" showPackageMethods="true" showStaticMethods="true" showPublicInnerClasses="true" showPackageInnerClasses="true" showStaticInnerClasses="true" packageIndication="3" showAttributeProperty="true"/>
+  </children>
+  <diagramOptions xsi:type="options:ClassDiagramOptions" properties="wireOptions=2;Product=eUML2" autoName="false"/>
+  <boardSetting snapToGeometry="true" gridEnabled="true" gridSpacing="15,15" gridOrigin="0,0" rulerUnit="pixel" gridVisibility="false">
+    <leftRuler/>
+    <topRuler/>
+  </boardSetting>
+  <classDiagramPreferences xsi:type="editmodel:UMLClassDiagramPreference" showPopupBars="true" showConnectionHandles="true" attributeSorter="Natural" methodSorter="Natural" showClassStereotype="true" showPackageStereotype="true" showDependencyStereotype="true" showInterfaceStereotype="true" innerClassSorter="Natural" showPublicAttributes="true" showPackageAttributes="true" showStaticAttributes="true" showPublicMethods="true" showPackageMethods="true" showStaticMethods="true" showPublicInnerClasses="true" showPackageInnerClasses="true" showStaticInnerClasses="true" packageIndication="3" showAttributeProperty="true"/>
+</editmodel:ClassDiagramEditModel>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<plugin>
+	<!-- Frogx Multi-User-Gaming plugin -->
+	<parentPlugin>frogx-service</parentPlugin>
+	
+	<!-- Main Openfire plugin class -->
+	<class>org.frogx.service.games.OpenfirePlugin</class>
+	
+	<!-- Plugin meta-data -->
+	<minServerVersion>3.0.0</minServerVersion>
+</plugin>

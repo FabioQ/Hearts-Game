@@ -1,0 +1,5 @@
+<span style="font-size:1.0em">
+Manifest-Version: 1.0
+Main-Class: JabberSmackAPI
+Class-Path: hearts.jar 
+</span>

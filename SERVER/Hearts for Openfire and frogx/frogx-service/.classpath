@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="src" path="frogx-api/src/main/java"/>
+	<classpathentry kind="src" path="frogx-component/src/main/java"/>
+	<classpathentry kind="src" path="frogx-core/src/main/java"/>
+	<classpathentry kind="src" path="frogx-core/src/test/java"/>
+	<classpathentry kind="src" path="frogx-games/frogx-hearts/src/main/java"/>
+	<classpathentry kind="src" path="frogx-openfire/src/main/java"/>
+	<classpathentry kind="src" path="frogx-plugin-extension/src/main/java"/>
+	<classpathentry kind="src" path="maven-frogx-service-plugin/src/main/java"/>
+	<classpathentry kind="lib" path="frogx-api/target/frogx-api-0.1-SNAPSHOT-javadoc.jar"/>
+	<classpathentry kind="lib" path="frogx-api/target/frogx-api-0.1-SNAPSHOT.jar"/>
+	<classpathentry kind="lib" path="frogx-component/target/frogx-component-0.1-SNAPSHOT-with-dependencies.jar"/>
+	<classpathentry kind="lib" path="frogx-component/target/frogx-component-0.1-SNAPSHOT.jar"/>
+	<classpathentry kind="lib" path="frogx-core/target/frogx-core-0.1-SNAPSHOT.jar"/>
+	<classpathentry kind="lib" path="frogx-games/frogx-hearts/target/frogx-hearts.jar"/>
+	<classpathentry kind="lib" path="frogx-games/frogx-hearts/target/frogx-hearts/lib/frogx-plugin-extension-0.1-SNAPSHOT.jar"/>
+	<classpathentry kind="lib" path="frogx-openfire/target/frogx-openfire/frogx-service.jar"/>
+	<classpathentry kind="lib" path="frogx-openfire/target/frogx-openfire/frogx-tictactoe.jar"/>
+	<classpathentry kind="lib" path="frogx-openfire/target/frogx-service.jar"/>
+	<classpathentry kind="lib" path="frogx-plugin-extension/target/frogx-plugin-extension-0.1-SNAPSHOT.jar"/>
+	<classpathentry kind="lib" path="maven-frogx-service-plugin/target/maven-frogx-service-plugin-0.1-SNAPSHOT-sources.jar"/>
+	<classpathentry kind="lib" path="maven-frogx-service-plugin/target/maven-frogx-service-plugin-0.1-SNAPSHOT.jar"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
+	<classpathentry kind="output" path="maven-frogx-service-plugin/target/classes"/>
+</classpath>

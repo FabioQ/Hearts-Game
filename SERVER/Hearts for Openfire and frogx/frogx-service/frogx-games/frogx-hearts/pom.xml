@@ -1,0 +1,56 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<parent>
+		<groupId>org.frogx.service</groupId>
+		<artifactId>frogx-games</artifactId>
+		<version>0.1-SNAPSHOT</version>
+	</parent>
+	<artifactId>frogx-hearts</artifactId>
+	<name>frogx-hearts - Hearts support for frogx services</name>
+	<description>Support Hearts gaming services.</description>
+	<packaging>frogx-service-plugin</packaging>
+	<scm>
+		<connection>scm:svn:http://svn.frogx.org/svnroot/frogx/service/trunk/frogx-hearts</connection>
+		<developerConnection>scm:svn:https://svn.frogx.org/svnroot/frogx/service/trunk/frogx-hearts</developerConnection>
+	</scm>
+	<build>
+		<finalName>${project.artifactId}</finalName>
+		<plugins>
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-compiler-plugin</artifactId>
+				<configuration>
+					<source>1.5</source>
+					<target>1.5</target>
+				</configuration>
+			</plugin>
+			<plugin>
+				<groupId>org.frogx.service</groupId>
+				<artifactId>maven-frogx-service-plugin</artifactId>
+				<version>0.1-SNAPSHOT</version>
+				<extensions>true</extensions>
+				<configuration>
+					<match>org.frogx.service.games.hearts.Match</match>
+					<namespace>http://jabber.org/protocol/mug/hearts</namespace>
+					<description>Hearts</description>
+					<category>board</category>
+				</configuration>
+			</plugin>
+		</plugins>
+	</build>
+	<dependencies>
+		<dependency>
+			<groupId>org.frogx.service</groupId>
+			<artifactId>frogx-api</artifactId>
+			<version>${project.version}</version>
+			<scope>provided</scope>
+		</dependency>
+	</dependencies>
+	<pluginRepositories>
+		<pluginRepository>
+			<id>frogx-repos</id>
+			<url>http://maven.frogx.org/repository</url>
+		</pluginRepository>
+	</pluginRepositories>
+</project>

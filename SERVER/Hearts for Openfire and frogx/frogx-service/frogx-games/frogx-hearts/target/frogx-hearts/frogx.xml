@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<plugin xmlns="http://frogx.org/protocol/plugin">
+  <type>match</type>
+  <match>org.frogx.service.games.hearts.Match</match>
+  <namespace>http://jabber.org/protocol/mug/hearts</namespace>
+  <description>Hearts</description>
+  <category>board</category>
+</plugin>

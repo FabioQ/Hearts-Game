@@ -1,0 +1,24 @@
+<assembly>
+	<id>win</id>
+	<formats>
+		<format>zip</format>
+	</formats>
+	<dependencySets>
+		<dependencySet>
+			<outputDirectory>plugins</outputDirectory>
+			<scope>optional</scope>
+			<excludes>
+				<exclude>org.frogx.service:frogx-component</exclude>
+			</excludes>
+		</dependencySet>
+	</dependencySets>
+	<fileSets>
+		<fileSet>
+			<directory>target</directory>
+			<outputDirectory>bin</outputDirectory>
+			<includes>
+				<include>frogx-component.exe</include>
+			</includes>
+		</fileSet>
+	</fileSets>
+</assembly>

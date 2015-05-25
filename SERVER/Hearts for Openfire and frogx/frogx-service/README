@@ -1,0 +1,59 @@
+    frogx - Free Online Gaming Service for XMPP <http://frogx.org/>
+    ===============================================================
+
+The project is planning to offer a external XMPP component which enables Jabber
+servers to support Multi-User Gaming services. For Openfire [1] server there are
+also plugins to support and manage Multi-User Gaming Services within the admin
+console.
+A Tic-tac-toe game plugin is also included and can be testet with Pidgin [2] 
+and the Pidgin Game Plugins [3].
+
+
+    Requirements
+    ------------
+
+- Java 5 (JDK 1.5) or greater <http://java.sun.com/>.
+- Maven 2.1 or greater <http://maven.apache.org/>.
+
+
+    Building the Source
+    -------------------
+
+- Ensure your JAVA_HOME variable locates to your actual Java directory:
+        $JAVA_HOME/bin/java -version
+
+- For the first time you need to install the packages in the following order:
+        1. frogx-api
+        2. frogx-core
+        3. frogx-plugin-extension
+        4. maven-frogx-service-plugin
+
+- The packages can be installed by navigating into the subdirectory and invoking:
+        mvn install
+
+- After installing the required packages you can navigate to the parent directory
+  and install the other packages within the local maven repository:
+        mvn install
+
+- Now you should find packages for the external component in the folder:
+        frogx-component/target
+
+- The openfire plugins can be found in:
+        frogx-openfire/target
+
+
+    Supported Openfire Databases
+    ----------------------------
+
+Currently we only support the following databases:
+- Openfire embedded database (HSQLDB)
+- MySQL <http://www.mysql.com/>
+
+
+    External Links
+    --------------
+
+[1] <http://www.igniterealtime.org/projects/openfire/>
+[2] <http://www.pidgin.im/>
+[3] <http://pidgin-games.sf.net/>
+
